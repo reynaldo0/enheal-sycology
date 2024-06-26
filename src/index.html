@@ -1,290 +1,413 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Enheal Psychology</title>
-  <link rel="stylesheet" href="css/output.css">
-  <!-- FLOWBITE -->
-  <link
-    href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
-    rel="stylesheet"
-  />
-</head>
-<body class="">
-  <img
-    class="absolute inset-0 h-full md:h-auto -z-10 w-full object-cover object-center"
-    src="./img/bg1.svg"
-    alt="Background 1"
-  />
-  <header class="sticky z-50 top-0 bg-transparent backdrop-blur-lg bg-opacity-75">
-    <nav class="z-50">
-      <div
-        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
-      >
-        <a
-          href="https://flowbite.com/"
-          class="flex items-center space-x-3 rtl:space-x-reverse"
-        >
-          <img
-            src="https://flowbite.com/docs/images/logo.svg"
-            class="h-8"
-            alt="Flowbite Logo"
-          />
-          <span
-            class="self-center text-2xl font-semibold whitespace-nowrap text-white"
-            >Flowbite</span
-          >
-        </a>
-        <div
-          class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
-        >
-          <button
-            type="button"
-            class="text-white border-2 border-white bg-transparent font-medium rounded-full text-sm px-8 py-2 text-center"
-          >
-            Daftar
-          </button>
-          <button
-            data-collapse-toggle="navbar-cta"
-            type="button"
-            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
-            aria-controls="navbar-cta"
-            aria-expanded="false"
-          >
-            <span class="sr-only">Open main menu</span>
-            <svg
-              class="w-5 h-5"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 17 14"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M1 1h15M1 7h15M1 13h15"
-              />
-            </svg>
-          </button>
-        </div>
-        <div
-          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
-          id="navbar-cta"
-        >
-          <ul
-            class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent"
-          >
-            <li>
-              <a
-                href="#"
-                class="block py-2 px-3 md:p-0 text-white bg-blue-700 rounded md:bg-transparent"
-                aria-current="page"
-                >Beranda</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 px-3 md:p-0 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700"
-                >Masalah</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 px-3 md:p-0 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700"
-                >Tentang Kami</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 px-3 md:p-0 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700"
-                >Konsultasi</a
-              >
-            </li>
-            <li>
-              <button
-                id="dropdownNavbarLink"
-                data-dropdown-toggle="dropdownNavbar"
-                class="flex items-center justify-between w-full py-2 px-3 text-white hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto"
-              >
-                Halaman
-                <svg
-                  class="w-2.5 h-2.5 ms-2.5"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 10 6"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="m1 1 4 4 4-4"
-                  />
-                </svg>
-              </button>
-              <!-- Dropdown menu -->
-              <div
-                id="dropdownNavbar"
-                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44"
-              >
-                <ul
-                  class="py-2 text-sm text-gray-700"
-                  aria-labelledby="dropdownLargeButton"
-                >
-                  <li>
-                    <a
-                      href="#"
-                      class="block px-4 py-2 hover:bg-gray-100"
-                      >Dashboard</a
-                    >
-                  </li>
-                  <li aria-labelledby="dropdownNavbarLink">
-                    <button
-                      id="doubleDropdownButton"
-                      data-dropdown-toggle="doubleDropdown"
-                      data-dropdown-placement="right-start"
-                      type="button"
-                      class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100"
-                    >
-                      Dropdown<svg
-                        class="w-2.5 h-2.5 ms-2.5"
-                        aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 10 6"
-                      >
-                        <path
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="m1 1 4 4 4-4"
-                        />
-                      </svg>
-                    </button>
-                    <div
-                      id="doubleDropdown"
-                      class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44"
-                    >
-                      <ul
-                        class="py-2 text-sm text-gray-700"
-                        aria-labelledby="doubleDropdownButton"
-                      >
-                        <li>
-                          <a
-                            href="#"
-                            class="block px-4 py-2 hover:bg-gray-100"
-                            >Overview</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            class="block px-4 py-2 hover:bg-gray-100"
-                            >My downloads</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            class="block px-4 py-2 hover:bg-gray-100"
-                            >Billing</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            class="block px-4 py-2 hover:bg-gray-100"
-                            >Rewards</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="block px-4 py-2 hover:bg-gray-100"
-                      >Earnings</a
-                    >
-                  </li>
-                </ul>
-                <div class="py-1">
-                  <a
-                    href="#"
-                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                    >Sign out</a
-                  >
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <img
-    class="absolute top-8 left-0 h-96 -z-10"
-    style="width: 10%"
-    src="./img/bg3.svg"
-    alt="Background 2"
-  />
-  <img
-    class="absolute top-0 right-0 h-full -z-10"
-    style="width: 40%"
-    src="./img/bg2.svg"
-    alt="Background 3"
-  />
-  <section class="text-white">
-    <div class="container">
-      <div
-      class="container mx-auto flex md:px-8 flex-col-reverse md:flex-row items-center max-w-screen-xl"
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enheal Psychology</title>
+    <link rel="stylesheet" href="css/output.css" />
+    <!-- FLOWBITE -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-white -z-0">
+    <div>
+      <img
+      class="absolute inset-0 h-full md:h-auto z-10 w-full object-cover object-center "
+      src="./img/bg1.svg"
+      alt="Background 1"
+    />
+    </div>
+    <header
+      class="sticky z-50 top-0 bg-transparent backdrop-blur-lg bg-opacity-75"
     >
-      <div
-        class="md:flex-grow md:w-1/2 flex flex-col md:items-start md:text-left md:p-4"
-      >
-        <h1
-          class="text-2xl md:text-4xl mb-4 font-serif font-bold"
+      <nav class="z-50">
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
         >
-        Pentingnya Menjaga Kesehatan Mental
-        </h1>
-        <p class="mb-5 leading-relaxed text-justify">
-          Kesehatan mental sama pentingnya dengan kesehatan fisik. Mental yang sehat akan membuat pikiran menjadi positif sehingga tubuh akan berfungsi dengan baik secara emosional, psikologis, sosial dan akan mempengaruhi cara berfikir, merasakan, dan berperilaku.
-        </p>
-        <div class="flex">
-          <button
-            class="inline-flex text-white bg-purple border-0 py-2 px-6 focus:outline-none rounded-full text-lg"
+          <a
+            href="https://flowbite.com/"
+            class="flex items-center space-x-3 rtl:space-x-reverse"
           >
-            Selengkapnya
-          </button>
+            <img
+              src="https://flowbite.com/docs/images/logo.svg"
+              class="h-8"
+              alt="Flowbite Logo"
+            />
+            <span
+              class="self-center text-2xl font-semibold whitespace-nowrap text-white"
+              >Flowbite</span
+            >
+          </a>
+          <div
+            class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
+          >
+            <button
+              type="button"
+              class="text-white border-2 border-white bg-transparent font-medium rounded-full text-sm px-8 py-2 text-center"
+            >
+              Daftar
+            </button>
+            <button
+              data-collapse-toggle="navbar-cta"
+              type="button"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+              aria-controls="navbar-cta"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            id="navbar-cta"
+          >
+            <ul
+              class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 md:p-0 text-white bg-blue-700 rounded md:bg-transparent"
+                  aria-current="page"
+                  >Beranda</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 md:p-0 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700"
+                  >Masalah</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 md:p-0 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700"
+                  >Tentang Kami</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 md:p-0 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700"
+                  >Konsultasi</a
+                >
+              </li>
+              <li>
+                <button
+                  id="dropdownNavbarLink"
+                  data-dropdown-toggle="dropdownNavbar"
+                  class="flex items-center justify-between w-full py-2 px-3 text-white hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto"
+                >
+                  Halaman
+                  <svg
+                    class="w-2.5 h-2.5 ms-2.5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div
+                  id="dropdownNavbar"
+                  class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44"
+                >
+                  <ul
+                    class="py-2 text-sm text-gray-700"
+                    aria-labelledby="dropdownLargeButton"
+                  >
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                        >Dashboard</a
+                      >
+                    </li>
+                    <li aria-labelledby="dropdownNavbarLink">
+                      <button
+                        id="doubleDropdownButton"
+                        data-dropdown-toggle="doubleDropdown"
+                        data-dropdown-placement="right-start"
+                        type="button"
+                        class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100"
+                      >
+                        Dropdown<svg
+                          class="w-2.5 h-2.5 ms-2.5"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 10 6"
+                        >
+                          <path
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="m1 1 4 4 4-4"
+                          />
+                        </svg>
+                      </button>
+                      <div
+                        id="doubleDropdown"
+                        class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44"
+                      >
+                        <ul
+                          class="py-2 text-sm text-gray-700"
+                          aria-labelledby="doubleDropdownButton"
+                        >
+                          <li>
+                            <a
+                              href="#"
+                              class="block px-4 py-2 hover:bg-gray-100"
+                              >Overview</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              class="block px-4 py-2 hover:bg-gray-100"
+                              >My downloads</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              class="block px-4 py-2 hover:bg-gray-100"
+                              >Billing</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              class="block px-4 py-2 hover:bg-gray-100"
+                              >Rewards</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                        >Earnings</a
+                      >
+                    </li>
+                  </ul>
+                  <div class="py-1">
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      >Sign out</a
+                    >
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <img
+      class="absolute top-8 left-0 h-96 z-10"
+      style="width: 10%"
+      src="./img/bg3.svg"
+      alt="Background 2"
+    />
+    <img
+      class="absolute top-0 right-0 h-full z-10"
+      style="width: 40%"
+      src="./img/bg2.svg"
+      alt="Background 3"
+    />
+    <section class="text-white">
+      <div class="container">
+        <div
+          class="container mx-auto flex md:px-8 flex-col-reverse md:flex-row items-center max-w-screen-xl"
+        >
+          <div
+            class="md:flex-grow md:w-1/2 flex flex-col md:items-start md:text-left md:p-4 z-20"
+          >
+            <h1 class="text-2xl md:text-4xl mb-4 font-serif font-bold">
+              Pentingnya Menjaga Kesehatan Mental
+            </h1>
+            <p class="mb-5 leading-relaxed text-justify">
+              Kesehatan mental sama pentingnya dengan kesehatan fisik. Mental
+              yang sehat akan membuat pikiran menjadi positif sehingga tubuh
+              akan berfungsi dengan baik secara emosional, psikologis, sosial
+              dan akan mempengaruhi cara berfikir, merasakan, dan berperilaku.
+            </p>
+            <div class="flex">
+              <button
+                class="inline-flex text-white bg-purple border-0 py-2 px-6 focus:outline-none rounded-full text-lg"
+              >
+                Selengkapnya
+              </button>
+            </div>
+          </div>
+          <div class="lg:w-2/3 mb-5 lg:mb-0 z-20">
+            <img class="object-cover" alt="hero" src="./img/icon1.svg" />
+          </div>
         </div>
       </div>
-      <div class="lg:w-2/3 mb-5 lg:mb-0">
-        <img
-          class="object-cover"
-          alt="hero"
-          src="./img/icon1.svg"
-        />
-      </div>
-    </div>
-    </div>
-  </section>
-  <section>
-    <div class="container">
-      <div class="py-10 md:py-56 text-center">
-        <p class="text-[#170058]">Jenis Masalah</p>
-      </div>
-    </div>
-  </section>
+    </section>
+    <section>
+      <div class="container">
+        <div class="py-10 md:pt-80 lg:pt-96 text-center">
+          <p class="text-[#170058] text-3xl font-bold">Jenis Masalah</p>
+          <p class="text-[#383838] pt-5 text-xl">
+            Pilihlah jenis masalah yang sedang kamu hadapi
+          </p>
 
-  <!-- FLOWBITE -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
-</body>
+          <div class="container max-w-screen-xl flex flex-wrap gap-10 pt-10 justify-center">
+            <div
+              class="w-full max-w-[15rem] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+            >
+              <img class="px-8" src="./img/jenis/Rectangle 26.svg" alt="" />
+              <a href="#">
+                <img
+                  class="p-8 rounded-t-lg"
+                  src="./img/jenis/image1.svg"
+                />
+              </a>
+              <div class="px-5 pb-5">
+                <a href="#">
+                  <h5
+                    class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                  >
+                  Pembullyan
+                  </h5>
+                </a>
+              </div>
+            </div>
+            <div
+              class="w-full max-w-[15rem] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+            >
+              <img class="px-8" src="./img/jenis/Rectangle 26.svg" alt="" />
+              <a href="#">
+                <img
+                  class="p-8 rounded-t-lg"
+                  src="./img/jenis/image 2.svg"
+                />
+              </a>
+              <div class="px-5 pb-5">
+                <a href="#">
+                  <h5
+                    class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                  >
+                    Hubungan Percintaan
+                  </h5>
+                </a>
+              </div>
+            </div>
+            <div
+              class="w-full max-w-[15rem] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+            >
+              <img class="px-8" src="./img/jenis/Rectangle 26.svg" alt="" />
+              <a href="#">
+                <img
+                  class="p-8 rounded-t-lg"
+                  src="./img/jenis/image 4.png"
+                />
+              </a>
+              <div class="px-5 pb-5">
+                <a href="#">
+                  <h5
+                    class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                  >
+                    Pembullyan
+                  </h5>
+                </a>
+              </div>
+            </div>
+            <div
+              class="w-full max-w-[15rem] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+            >
+              <img class="px-8" src="./img/jenis/Rectangle 26.svg" alt="" />
+              <a href="#">
+                <img
+                  class="p-8 rounded-t-lg"
+                  src="./img/jenis/image 4.png"
+                />
+              </a>
+              <div class="px-5 pb-5">
+                <a href="#">
+                  <h5
+                    class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                  >
+                    Pembullyan
+                  </h5>
+                </a>
+              </div>
+            </div>
+            <div
+              class="w-full max-w-[15rem] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+            >
+              <img class="px-8" src="./img/jenis/Rectangle 26.svg" alt="" />
+              <a href="#">
+                <img
+                  class="p-8 rounded-t-lg"
+                  src="./img/jenis/image 4.png"
+                />
+              </a>
+              <div class="px-5 pb-5">
+                <a href="#">
+                  <h5
+                    class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                  >
+                    Pembullyan
+                  </h5>
+                </a>
+              </div>
+            </div>
+            <div
+              class="w-full max-w-[15rem] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+            >
+              <img class="px-8" src="./img/jenis/Rectangle 26.svg" alt="" />
+              <a href="#">
+                <img
+                  class="p-8 rounded-t-lg"
+                  src="./img/jenis/image 4.png"
+                />
+              </a>
+              <div class="px-5 pb-5">
+                <a href="#">
+                  <h5
+                    class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                  >
+                    Pembullyan
+                  </h5>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FLOWBITE -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  </body>
 </html>
