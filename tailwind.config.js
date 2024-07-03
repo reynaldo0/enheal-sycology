@@ -15,6 +15,9 @@ module.exports = {
         purple: '#AB67B1',
         yellow: '#F7C04A',
       },
+      backgroundAttachment: {
+        fixed: 'fixed',
+      },
     },
   },
   plugins: [
