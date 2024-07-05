@@ -10,6 +10,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
       rel="stylesheet"
     />
+    <!-- swiper JS  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <link rel="icon" href="img/logo.png" type="image/icon type" />
   </head>
   <body class="bg-gray-200 -z-0">
@@ -379,7 +385,7 @@
             alt="Background"
           />
         </div>
-        <div class="container mx-auto">
+        <div class="container mx-auto max-w-screen-xl">
           <div class="flex flex-col-reverse md:flex-row max-w-screen-xl">
             <div
               class="md:flex-grow flex flex-col md:items-start md:text-left z-20"
@@ -397,7 +403,11 @@
                 <span
                   class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border rounded-e-0 border-gray-300 border-e-0 rounded-s-full"
                 >
-                  <img class="w-5 h-5 text-gray-500" src="./img/illusration/username.svg" alt="">
+                  <img
+                    class="w-5 h-5 text-gray-500"
+                    src="./img/illusration/username.svg"
+                    alt=""
+                  />
                 </span>
                 <input
                   type="text"
@@ -410,7 +420,11 @@
                 <span
                   class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border rounded-e-0 border-gray-300 border-e-0 rounded-s-full"
                 >
-                  <img class="w-5 h-5 text-gray-500" src="./img/illusration/email.svg" alt="">
+                  <img
+                    class="w-5 h-5 text-gray-500"
+                    src="./img/illusration/email.svg"
+                    alt=""
+                  />
                 </span>
                 <input
                   type="text"
@@ -423,7 +437,11 @@
                 <span
                   class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border rounded-e-0 border-gray-300 border-e-0 rounded-s-full"
                 >
-                  <img class="w-5 h-5 text-gray-500" src="./img/illusration/whatsapp.svg" alt="">
+                  <img
+                    class="w-5 h-5 text-gray-500"
+                    src="./img/illusration/whatsapp.svg"
+                    alt=""
+                  />
                 </span>
                 <input
                   type="text"
@@ -451,12 +469,91 @@
     </section>
     <section>
       <div class="container mx-auto max-w-screen-xl py-10">
-        <p class="text-[#170058] text-4xl font-bold text-center">Kutipan Kata</p>
+        <p class="text-[#170058] text-4xl font-bold text-center">
+          Kutipan Kata
+        </p>
         <div class="bg-[#170058] h-1 w-32 mt-4 mx-auto"></div>
+      </div>
+      <div class="container mx-auto max-w-screen-xl">
+        <div class="flex flex-col items-center gap-x-14 lg:flex-row">
+          <div class="hidden lg:flex">
+            <!-- img -->
+            <img src="./img/qoute/kutipan.png" alt="" />
+          </div>
+          <!-- slider -->
+          <div class="max-w-[90%] lg:max-w-[710px] my-0 lg:my-20">
+            <!-- Slider main container -->
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper mb-10 lg:mb-0">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                  <div class="h-full flex flex-col justify-center items-start">
+                    <div class="max-w-[680px] mx-auto text-center lg:text-left">
+                      <p
+                        class="font-light relative text-[22px] text-[#4c5354] text-left lg:text-left lg:mx-0 before:bg-[url('../img/qoute/left.svg')] before:bg-contain before:bg-bottom before:inline-block before:top-0 before:w-10 before:h-10 before:bg-no-repeat after:bg-[url('../img/qoute/right.svg')] after:bg-contain after:bg-bottom after:inline-block after:top-0 after:w-10 after:h-10 after:bg-no-repeat mb-7"
+                      >
+                        <!-- pesan -->
+                        <span class="mx-2 text-4xl"
+                          >Kepercayaan akan diri sendiri adalah rahasia utama untuk sukses.
+                          </span
+                        >
+                      </p>
+                      <!-- nama -->
+                      <div class="text-[26px] text-[#4c5354] font-semibold">
+                        Irfan Gaul
+                      </div>
+                      <!-- profesi -->
+                      <div
+                        class="text-[#9ab4b7] font-medium uppercase tracking-[2.24px]"
+                      >
+                        Manager
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                  <div class="h-full flex flex-col justify-center items-start">
+                    <div class="max-w-[680px] mx-auto text-center lg:text-left">
+                      <p
+                        class="font-light relative text-[22px] text-[#4c5354] text-left lg:text-left lg:mx-0 before:bg-[url('../img/qoute/left.svg')] before:bg-contain before:bg-bottom before:inline-block before:top-0 before:w-10 before:h-10 before:bg-no-repeat after:bg-[url('../img/qoute/right.svg')] after:bg-contain after:bg-bottom after:inline-block after:top-0 after:w-10 after:h-10 after:bg-no-repeat mb-7"
+                      >
+                        <!-- pesan -->
+                        <span class="mx-2"
+                          >Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Eaque deleniti pariatur laboriosam repellat?
+                          Provident est exercitationem repellendus, facilis
+                          fuga, hic asperiores sit aperiam consequatur libero
+                          sunt distinctio molestias quas? Ipsam!</span
+                        >
+                      </p>
+                      <!-- nama -->
+                      <div class="text-[26px] text-[#4c5354] font-semibold">
+                        Dooya
+                      </div>
+                      <!-- profesi -->
+                      <div
+                        class="text-[#9ab4b7] font-medium uppercase tracking-[2.24px]"
+                      >
+                        Manager
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Swiper pagination -->
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
+    <script src="js/main.js"></script>
     <!-- FLOWBITE -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <!-- SWIPER JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>
